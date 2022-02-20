@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+/* ---Estilo Geral--- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-style: none;
+    outline: none;
+}
+/* Estilo para o corpo da pagina */
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: #559cc9;
+    background-color: #015762;
+    background-image: linear-gradient(68deg, #1d08a3 0%, #160dca 50%, #5793ca 100%);    
+}
+h1{
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(162, 224, 211);
+}
+span{
+    position: absolute;
+    top: 5%;
+    font-size: 2.5rem;
+    color: rgb(213, 237, 253);
+    text-shadow: -5px 2px 3px rgb(7, 7, 7);
+    text-transform: capitalize;
+    font-family: 'Special Elite', cursive;
+    margin-left: 20px;
+}
+/* Corpo da calculadora */
+.caixa{
+    height: 55vh;
+    width: 35vh;
+    background-color: rgb(45, 47, 48);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: column;
+    border-radius: 5px;
+}
+/* tela do visor*/
+#display{
+    height: 6vh;
+    width: 100%;
+    margin-bottom: 2%;
+    overflow-x: auto;
+    padding: 2px;
+}
+#result{
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    font-size: 2rem;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    padding: 5px;
+} 
+.caixa .btns{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caixa .btns table{
+    height: 100%;
+    width: 100%
+}
+.caixa .btns table tr td{
+    width: 20%;
+    text-align: center;
+}
+/* Estilização dos botões */
+button{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    border-radius: 2px;
+}
+/* Muda a cor de fundo e a cor da fonte ao passar o mouse */
+button:hover{
+    cursor: pointer;
+    background-color: rgb(170, 172, 173);
+    color: white;
+}
+/* Rodapé */
+footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    padding: 1%;
+    background-color: rgb(77, 140, 182)
+}
+footer .conteudo{
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+}
+/* Responsividade */
+@media (max-height: 613px){
+    .caixa{
+        width: 50%;
+        height: 70%;
+    }
+    #display{
+        height: 20%;
+    }
+    h1{
+        display: none;
+    }
+    #display #result, span, botton{
+        font-size: 1.3rem;
+    }
+    footer .conteudo{
+        width: 100%;
+    }
+    footer{
+        padding: 3%;
+    }
+  
+}
