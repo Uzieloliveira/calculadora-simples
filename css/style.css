@@ -1,3 +1,6 @@
+
+/* Importação da fonte usada no título principal */
+
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 /* ---Estilo Geral--- */
@@ -8,6 +11,7 @@
     border-style: none;
     outline: none;
 }
+
 /* Estilo para o corpo da pagina */
 body{
     height: 100vh;
@@ -47,6 +51,7 @@ span{
     padding: 10px;
     flex-direction: column;
     border-radius: 5px;
+    margin-bottom: 1%;
 }
 /* tela do visor*/
 #display{
@@ -105,16 +110,33 @@ footer{
     display: flex;
     justify-content: right;
     width: 100%;
-    padding: 1%;
     background-color: rgb(77, 140, 182)
 }
 footer .conteudo{
-    text-align: right;
+    text-align: left;
     display: flex;
     justify-content: space-between;
-    width: 40%;
+    flex-wrap: wrap;
+    width: 50%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: .8rem;
+    margin: 0 auto;
+    line-height: 25px;
+    padding: 5px;
+}
+footer .conteudo a{
+    color: white;
+    text-decoration: none;
+    text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .2s;
+}
+footer .conteudo a i{
+    margin-right: 10px;
+}
+footer .conteudo a:hover{
+    color: rgb(77, 80, 83);
+    text-decoration: underline;
 }
 /* Responsividade */
 @media (max-height: 613px){
@@ -132,10 +154,10 @@ footer .conteudo{
         font-size: 1.3rem;
     }
     footer .conteudo{
-        width: 100%;
+        width: 90%;
     }
-    footer{
-        padding: 3%;
+    footer .conteudo a, footer .conteudo p{
+        font-size: .6rem;
     }
   
 }
