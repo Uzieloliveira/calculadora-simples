@@ -57,7 +57,7 @@ span{
 #display{
     height: 6vh;
     width: 100%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     overflow-x: auto;
     padding: 2px;
 }
@@ -76,7 +76,7 @@ span{
     padding: 5px;
 } 
 .caixa .btns{
-    height: 100%;
+    height: 80%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -143,6 +143,7 @@ footer .conteudo a:hover{
     .caixa{
         width: 50%;
         height: 70%;
+
     }
     #display{
         height: 20%;
@@ -150,9 +151,10 @@ footer .conteudo a:hover{
     h1{
         display: none;
     }
-    #display #result, span, botton{
+    #display #result, span, button{
         font-size: 1.3rem;
     }
+  
     footer .conteudo{
         width: 90%;
     }
@@ -160,4 +162,26 @@ footer .conteudo a:hover{
         font-size: .6rem;
     }
   
+}
+@media (max-width: 392px){
+    .caixa{
+        width: 60%;
+        height: 40%;
+    }
+    footer{
+        padding: 2px;
+    }
+    h1{
+        font-size: 1.3rem;
+    }
+    footer .conteudo a, footer .conteudo p{
+        font-size: .6rem;
+    }
+   
+    #display #result, span, button{
+        font-size: 1.3rem;
+    }
+    .btns{
+        height: ;
+    }
 }
